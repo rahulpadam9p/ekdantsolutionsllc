@@ -10,14 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Basic Styling for the updated layout */
-
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        /* Top Bar with Contact Info */
+        /* Top Bar with Contact Info and Social Links */
         .top-bar {
             background-color: #000;
             color: white;
@@ -27,20 +26,52 @@
             align-items: center;
         }
 
-        .top-bar p {
-            margin: 0;
-        }
-
         .social-links {
             list-style: none;
             margin: 0;
             padding: 0;
             display: flex;
-            gap: 10px;
+            gap: 15px;
         }
 
         .social-links a {
             color: white;
+            font-size: 18px;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        /* Add styling for search functionality */
+        .search-container {
+            position: relative;
+        }
+
+        .search-icon {
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .search-input {
+            display: none;
+            position: absolute;
+            right: 40px;
+            top: -5px;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .search-container:hover .search-input {
+            display: block;
         }
 
         /* Header Container */
@@ -55,7 +86,7 @@
 
         .logo h1 {
             margin: 0;
-            color: #1e90ff; /* Same color as in the screenshot */
+            color: #ffffff; /* Same color as in the screenshot */
         }
 
         nav ul {
@@ -73,7 +104,7 @@
         }
 
         nav a:hover {
-            color: #1e90ff; /* Matching the primary color from the screenshot */
+            color: #ffffff; /* Matching the primary color from the screenshot */
         }
 
         /* Hero Section */
@@ -161,7 +192,7 @@
 
         .footer-right a {
             text-decoration: none;
-            color: #1e90ff;
+            color: #ffffff;
         }
 
         .footer-right a:hover {
@@ -173,20 +204,31 @@
 <body>
     <!-- Top Bar -->
     <div class="top-bar">
-        <p>hr@ekdantitsolutions.com</p>
-        <p>+1 (214) 606-3934</p>
         <ul class="social-links">
             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
         </ul>
+        <div class="contact-info">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="search-input" placeholder="Search...">
+            </div>
+            <p>hr@ekdantitsolutions.com</p>
+            <p>+1 (214) 606-3934</p>
+        </div>
     </div>
 
     <!-- Header -->
     <header>
         <div class="container">
             <div class="logo">
-                <h1>EKDANT IT Solutions LLC</h1>
+                <h1>
+   			 <span style="color: #1e90ff;">EKDANT</span> 
+    			 <span style="color: #ff6347;">IT</span> 
+    			 <span style="color: #32cd32;">Solutions</span>
+		</h1>
+
             </div>
             <nav>
                 <ul>
@@ -194,6 +236,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li><a href="trading.html">Trading</a></li>
                 </ul>
             </nav>
         </div>
@@ -236,6 +279,18 @@
     <footer>
         <div class="container">
             <div class="footer-left">
-                <h4>EKDANT IT Solutions LLC</h4>
+                <h4>EKDANT IT Solutions</h4>
                 <p>© 2024 EKDANT IT Solutions LLC. All rights reserved.</p>
-     
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
