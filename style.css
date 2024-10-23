@@ -1,12 +1,15 @@
 /* General styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 .container {
     width: 80%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -15,10 +18,17 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
     float: left;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
 }
 
 header nav {
@@ -32,18 +42,26 @@ header nav ul {
 }
 
 header nav ul li {
-    display: inline;
+    display: inline-block;
     margin-left: 20px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #4CAF50;
+    border-radius: 5px;
 }
 
 /* Hero section styles */
 #hero {
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #4CAF50, #2E7D32);
     color: white;
     text-align: center;
     padding: 100px 0;
@@ -52,43 +70,64 @@ header nav ul li a {
 #hero h2 {
     font-size: 50px;
     margin: 0;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 #hero p {
     font-size: 20px;
+    margin: 20px 0;
 }
 
 #hero .cta-btn {
     display: inline-block;
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 15px 30px;
     background-color: white;
     color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 25px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#hero .cta-btn:hover {
+    background-color: #333;
+    color: white;
 }
 
 /* Services section styles */
 #services {
     padding: 50px 0;
     text-align: center;
+    background-color: #fff;
 }
 
 #services h3 {
-    font-size: 30px;
+    font-size: 35px;
     margin-bottom: 40px;
+    font-weight: 600;
 }
 
 .service-box {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .service {
-    width: 30%;
+    flex: 1 1 30%;
     background-color: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service i {
@@ -97,19 +136,32 @@ header nav ul li a {
 }
 
 .service h4 {
-    margin-top: 10px;
-    font-size: 20px;
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .service-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service {
+        width: 80%;
+    }
 }
 
 /* Footer styles */
 footer {
     background-color: #333;
     color: white;
-    padding: 20px 0;
+    padding: 30px 0;
     text-align: center;
     position: relative;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer .footer-right ul {
@@ -118,7 +170,7 @@ footer .footer-right ul {
 }
 
 footer .footer-right ul li {
-    display: inline;
+    display: inline-block;
     margin-left: 20px;
 }
 
@@ -126,4 +178,25 @@ footer .footer-right ul li a {
     color: white;
     text-decoration: none;
     font-size: 20px;
+    transition: color 0.3s;
+}
+
+footer .footer-right ul li a:hover {
+    color: #4CAF50;
+}
+
+@media (max-width: 768px) {
+    header .logo, header nav {
+        float: none;
+        text-align: center;
+    }
+    
+    header nav ul {
+        display: inline-block;
+    }
+    
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
