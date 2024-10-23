@@ -15,15 +15,53 @@ body {
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    position: relative;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 0;
 }
 
 header .logo {
     font-size: 24px;
     font-weight: bold;
+}
+
+/* Top bar for social media */
+.top-bar {
+    background-color: #e3e3e3;
+    padding: 5px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.top-bar p {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.top-bar .social-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+    padding: 0;
+}
+
+.top-bar .social-links li {
+    display: inline-block;
+}
+
+.top-bar .social-links li a {
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.top-bar .social-links li a:hover {
+    color: #4CAF50;
 }
 
 header nav ul {
@@ -39,43 +77,12 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: #333;
     text-decoration: none;
     font-size: 16px;
 }
 
 header nav ul li a:hover {
-    color: #4CAF50;
-}
-
-/* Social icons */
-.social-icons {
-    position: absolute;
-    top: 20px;
-    right: 0;
-    padding-right: 20px;
-}
-
-.social-links {
-    list-style: none;
-    display: flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline-block;
-}
-
-.social-links li a {
-    color: white;
-    font-size: 18px;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.social-links li a:hover {
     color: #4CAF50;
 }
 
