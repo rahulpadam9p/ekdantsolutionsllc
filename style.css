@@ -1,0 +1,188 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .logo h1 {
+    float: left;
+    font-size: 1.5em;
+}
+
+header nav ul {
+    list-style: none;
+    float: right;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* Hero section */
+#hero {
+    background: url('your-background-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.cta-btn {
+    background-color: #4CAF50;
+    padding: 15px 30px;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #45a049;
+}
+
+/* About section */
+#about {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h3 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Services section */
+#services {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#services h3 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.service-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service {
+    background-color: #fff;
+    padding: 30px;
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service i {
+    font-size: 2.5em;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.service h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Contact section */
+#contact {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#contact h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+/* Footer styles */
+footer {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer h4 {
+    margin-bottom: 10px;
+}
+
+footer .social-links {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .social-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer .social-links li a:hover {
+    color: #4CAF50;
+}
