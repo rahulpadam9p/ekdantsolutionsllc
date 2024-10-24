@@ -15,10 +15,11 @@ body {
 
 /* Header styles */
 header {
-    background: linear-gradient(90deg, #b3e5fc 0%, #81d4fa 100%);
+    background: linear-gradient(90deg, white 0%, white 100%); /* Changed blue to white */
     color: #333;
     padding: 10px 0;
 }
+
 
 header .logo {
     font-size: 24px;
@@ -27,7 +28,7 @@ header .logo {
 
 /* Top bar for social media */
 .top-bar {
-    background-color: #e3e3e3;
+    background-color: #3e3e3e;
     padding: 5px 0;
     text-align: center;
     display: flex;
