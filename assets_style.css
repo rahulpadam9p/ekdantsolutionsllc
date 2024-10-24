@@ -4,6 +4,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container1 {
+    width: 660%;
+    font-size: 0.8rem;
+    height: 36;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .container {
     width: 80%;
     max-width: 1200px;
