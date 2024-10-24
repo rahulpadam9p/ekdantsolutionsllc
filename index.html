@@ -10,11 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* Basic Styling for the updated layout */
+        html, body {
+            height: 100%; /* Full height */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            box-sizing: border-box; /* Include padding and border in width/height */
+        }
+
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
             background-color: white;
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
         }
 
         /* Top Bar with Contact Info and Social Links */
@@ -83,6 +90,7 @@
             padding: 20px;
             background-color: white;
             border-bottom: 1px solid #eee;
+            flex-wrap: wrap; /* Allow items to wrap on small screens */
         }
 
         .logo h1 {
@@ -111,7 +119,7 @@
         #hero {
             background-color: white; /* Changed from black to white */
             color: black;
-            padding: 60px 0;
+            padding: 60px 20px; /* Responsive padding */
             text-align: center; /* Changed from left to center */
         }
 
@@ -140,7 +148,7 @@
 
         /* Services Section */
         #services {
-            padding: 60px 0;
+            padding: 60px 20px; /* Responsive padding */
             text-align: center;
         }
 
@@ -152,6 +160,7 @@
             display: flex;
             justify-content: space-around;
             margin-top: 40px;
+            flex-wrap: wrap; /* Allow services to wrap on small screens */
         }
 
         .service {
@@ -177,6 +186,7 @@
         footer {
             background-color: #f8f9fa;
             padding: 20px 0;
+            text-align: center; /* Center text in footer */
         }
 
         .footer-left h4 {
@@ -205,24 +215,23 @@
 <body>
     <!-- Top Bar -->
     <div class="top-bar">
-        <ul class="social-links"><span style="color: #1e90ff; font-weight: bold; font-size: 1.0em">Social Media</span>
-               <li>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="facebook">
-                <i class="fab fa-facebook-f"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="instagram">
-                <i class="fab fa-instagram"></i>
-            </a>
-        </li>
-      <li>
-    <a href="https://wa.me/+19402798829" target="_blank" rel="noopener noreferrer" class="whatsapp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-</li>
-
-        </li>
+        <ul class="social-links">
+            <span style="color: #1e90ff; font-weight: bold; font-size: 1.0em">Social Media</span>
+            <li>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="https://wa.me/+19402798829" target="_blank" rel="noopener noreferrer" class="whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </li>
         </ul>
         <div class="contact-info">
             <div class="search-container">
@@ -239,8 +248,8 @@
         <div class="container">
             <div class="logo">
                 <h1>
-                    <span style="color: #1e90ff;">EKDANT</span> 
-                    <span style="color: #ff6347;">IT</span> 
+                    <span style="color: #1e90ff;">EKDANT</span>
+                    <span style="color: #ff6347;">IT</span>
                     <span style="color: #32cd32;">Solutions</span>
                 </h1>
             </div>
